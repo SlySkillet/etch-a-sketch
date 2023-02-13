@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  align-items: center;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container {
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+  width: 500px;
+  height: 500px;
+  background-color: whitesmoke;
+  margin: 20px;
+}
