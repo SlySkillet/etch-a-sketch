@@ -1,5 +1,5 @@
 const sliderSize = document.getElementById("sizeRange");
-const output = document.getElementById("grid-size");
+const gridSizeDisplay = document.getElementById("grid-size");
 let gridSize = sliderSize.value;
 
 //function to create grid takes in gridSize as a parameter, makes gridSize**2 div elements inside of the container
@@ -15,12 +15,12 @@ const makeGrid = function (gridSize) {
 
 //slider function - takes number for rows/columns and stores it in gridSize variable and displays it, returns gridSize
 sliderSize.oninput = function () {
-  output.textContent = `${this.value} x ${this.value}`; //rewrites grid-size display
+  gridSizeDisplay.textContent = `${this.value} x ${this.value}`; //rewrites grid-size display
   gridSize = this.value; //sets grid-size variable
   //   console.log(gridSize);
   makeGrid(gridSize);
 };
 
 //INIT
-output.innerHTML = `${gridSize} x ${gridSize}`;
+gridSizeDisplay.textContent = `${gridSize} x ${gridSize}`;
 makeGrid(gridSize);
