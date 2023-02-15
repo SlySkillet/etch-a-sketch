@@ -15,7 +15,7 @@ const makeGrid = function (gridSize) {
 
 //slider function - takes number for rows/columns and stores it in gridSize variable and displays it, returns gridSize
 sliderSize.oninput = function () {
-  output.innerHTML = `${this.value} x ${this.value}`; //rewrites grid-size display
+  output.textContent = `${this.value} x ${this.value}`; //rewrites grid-size display
   gridSize = this.value; //sets grid-size variable
   //   console.log(gridSize);
   makeGrid(gridSize);
