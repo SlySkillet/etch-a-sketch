@@ -4,6 +4,15 @@ const colorCell = function () {
   this.style.backgroundColor = color;
 };
 
+const changeColor = function (choice) {
+  color = choice;
+};
+
+// const rainbowColor = function () {
+//   let num = math.random();
+//   console.log(num);
+// };
+
 const makeGrid = function (size) {
   let board = document.querySelector(".container");
   let cells = board.querySelectorAll("div");
@@ -20,16 +29,12 @@ const makeGrid = function (size) {
   }
 };
 
-makeGrid(16);
-
 const changeSize = function (input) {
   if (input >= 16 && input <= 100) {
     makeGrid(input);
   } else {
-    console.log("broh number between 16 and 100 broh 🐳");
+    console.log("broh num between 16 and 100 broh 🐳");
   }
 };
 
-const changeColor = function (choice) {
-  color = choice;
-};
+makeGrid(16);
