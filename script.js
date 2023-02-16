@@ -1,5 +1,7 @@
+let color = "black";
+
 const colorCell = function () {
-  this.style.backgroundColor = "black";
+  this.style.backgroundColor = color;
 };
 
 const makeGrid = function (size) {
@@ -26,4 +28,8 @@ const changeSize = function (input) {
   } else {
     console.log("broh number between 16 and 100 broh 🐳");
   }
+};
+
+const changeColor = function (choice) {
+  color = choice;
 };
