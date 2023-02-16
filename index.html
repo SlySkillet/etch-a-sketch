@@ -18,11 +18,16 @@
       <button>GREY</button>
       <button>ERASER</button>
     </div>
-    <div id="container"></div>
+    <div class="container"></div>
     <div class="bottom-buttons">
       <button>CLEAR</button>
       <div>
-        <input type="text" placeholder="size of grid" value="16" />
+        <input
+          type="text"
+          placeholder="size of grid"
+          value="16"
+          onchange="changeSize(this.value)"
+        />
         <button>Change Size</button>
       </div>
       <!-- <div class="slide-container">
