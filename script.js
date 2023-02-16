@@ -8,6 +8,10 @@ const makeGrid = function (size) {
   let gridCells = size * size;
   for (let i = 0; i < gridCells; i++) {
     let cell = document.createElement("div");
+    cell.addEventListener(
+      "mouseover",
+      () => (cell.style.backgroundColor = "black")
+    );
     cell.style.backgroundColor = "rgb(243, 92, 200)";
     board.insertAdjacentElement("beforeend", cell);
   }
