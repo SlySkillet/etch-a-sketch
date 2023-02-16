@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Etch-A-Sketch</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheer" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Etch-A-Sketch</h1>
+
     <div class="top-buttons">
-      <button>BTN1</button>
-      <button>BTN2</button>
-      <button>BTN3</button>
-      <button>BTN4</button>
-      <button>BTN5</button>
+      <button>BLACK</button>
+      <button>WHITE</button>
+      <button>RAINBOW</button>
+      <button>GREY</button>
+      <button>ERASER</button>
     </div>
     <div id="container"></div>
     <div class="bottom-buttons">
       <button>CLEAR</button>
-      <div class="slide-container">
+      <div>
+        <input type="text" placeholder="size of grid" value="16" />
+        <button>Change Size</button>
+      </div>
+      <!-- <div class="slide-container">
         <input
           type="range"
           min="16"
@@ -29,7 +35,7 @@
           id="sizeRange"
         />
       </div>
-      <p>Size: <div id="grid-size"></div></p>
+      <p>Size: <div id="grid-size"></div></p> -->
     </div>
     <script src="script.js"></script>
   </body>
