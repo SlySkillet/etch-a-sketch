@@ -1,3 +1,7 @@
+const colorCell = function () {
+  this.style.backgroundColor = "black";
+};
+
 const makeGrid = function (size) {
   let board = document.querySelector(".container");
   let cells = board.querySelectorAll("div");
@@ -8,11 +12,8 @@ const makeGrid = function (size) {
   let gridCells = size * size;
   for (let i = 0; i < gridCells; i++) {
     let cell = document.createElement("div");
-    cell.addEventListener(
-      "mouseover",
-      () => (cell.style.backgroundColor = "black")
-    );
-    cell.style.backgroundColor = "rgb(243, 92, 200)";
+    cell.addEventListener("mouseover", colorCell);
+    // cell.style.backgroundColor = "rgb(243, 92, 200)";
     board.insertAdjacentElement("beforeend", cell);
   }
 };
