@@ -6,33 +6,16 @@ const changeColor = function (choice) {
 
 const colorCell = function () {
   if (color === 'rainbow') {
-    console.log('suh');
+    this.style.opacity = 1;
     this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+  } else if (color === 'grey') {
+    this.style.backgroundColor = 'black';
+    this.style.opacity = 0.2;
   } else {
+    this.style.opacity = 1;
     this.style.backgroundColor = color;
   }
 };
-
-// const rainbowColor = function () {
-//   let num = Math.floor(Math.random() * 8);
-//   if (num === 0) {
-//     changeColor('maroon');
-//   } else if (num === 1) {
-//     changeColor('red');
-//   } else if (num === 2) {
-//     changeColor('orange');
-//   } else if (num === 3) {
-//     changeColor('yellow');
-//   } else if (num === 4) {
-//     changeColor('green');
-//   } else if (num === 5) {
-//     changeColor('blue');
-//   } else if (num === 6) {
-//     changeColor('indigo');
-//   } else {
-//     changeColor('violet');
-//   }
-// };
 
 const makeGrid = function (size) {
   let board = document.querySelector('.container');
