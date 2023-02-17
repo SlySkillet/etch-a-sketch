@@ -6,13 +6,11 @@ const changeColor = function (choice) {
 
 const colorCell = function () {
   if (color === 'rainbow') {
-    this.style.opacity = 1;
     this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
   } else if (color === 'grey') {
-    this.style.backgroundColor = 'black';
-    this.style.opacity = 0.2;
+    color = `rgba(0,0,0, 0.2)`;
+    this.style.backgroundColor = color;
   } else {
-    this.style.opacity = 1;
     this.style.backgroundColor = color;
   }
 };
@@ -42,3 +40,9 @@ const changeSize = function (input) {
 };
 
 makeGrid(16);
+
+const resetBoard = function () {
+  let board = document.querySelector('.container');
+  let cells = board.querySelectorAll('div');
+  cells.forEach((div) => (div.style.backgroundColor = 'whitesmoke'));
+};
