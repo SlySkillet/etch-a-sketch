@@ -1,17 +1,24 @@
 let color = 'black';
+let click = true;
+
+document.querySelector('body').addEventListener('click', () => {
+  click = !click;
+});
 
 const changeColor = function (choice) {
   color = choice;
 };
 
 const colorCell = function () {
-  if (color === 'rainbow') {
-    this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-  } else if (color === 'grey') {
-    color = `rgba(0,0,0, 0.2)`;
-    this.style.backgroundColor = color;
-  } else {
-    this.style.backgroundColor = color;
+  if (click) {
+    if (color === 'rainbow') {
+      this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    } else if (color === 'grey') {
+      color = `rgba(0,0,0, 0.2)`;
+      this.style.backgroundColor = color;
+    } else {
+      this.style.backgroundColor = color;
+    }
   }
 };
 
