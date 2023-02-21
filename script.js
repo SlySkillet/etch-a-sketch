@@ -8,7 +8,7 @@ document.querySelector('.container').addEventListener('click', () => {
       '🎨DRAWING MODE🎨 move cursor to draw ~~ click to lift your paint brush 🐋';
   } else {
     document.querySelector('.mode').textContent =
-      'DRAWING MODE OFF 👾👾👾 click in drawing box to color 👾👾👾';
+      'DRAWING MODE OFF 👻 click in drawing box to color 👻';
   }
 });
 
@@ -40,7 +40,6 @@ const makeGrid = function (size) {
   for (let i = 0; i < gridCells; i++) {
     let cell = document.createElement('div');
     cell.addEventListener('mouseover', colorCell);
-    // cell.style.backgroundColor = "rgb(243, 92, 200)";
     board.insertAdjacentElement('beforeend', cell);
   }
 };
