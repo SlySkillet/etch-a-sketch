@@ -10,7 +10,9 @@
   </head>
   <body>
     <h1>Etch-A-Sketch</h1>
-
+    <div class="mode">
+      🎨DRAWING MODE🎨 move cursor to draw ~~ click to lift your paint brush 🐋
+    </div>
     <div class="top-buttons">
       <button onclick="changeColor('black')">BLACK</button>
       <button onclick="changeColor('rainbow')">RAINBOW</button>
@@ -29,17 +31,6 @@
         />
         <button>Change Size</button>
       </div>
-      <!-- <div class="slide-container">
-        <input
-          type="range"
-          min="16"
-          max="40"
-          value="16"
-          class="slider"
-          id="sizeRange"
-        />
-      </div>
-      <p>Size: <div id="grid-size"></div></p> -->
     </div>
     <script src="script.js"></script>
   </body>
