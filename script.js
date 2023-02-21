@@ -1,8 +1,15 @@
 let color = 'black';
 let click = true;
 
-document.querySelector('body').addEventListener('click', () => {
+document.querySelector('.container').addEventListener('click', () => {
   click = !click;
+  if (click) {
+    document.querySelector('.mode').textContent =
+      '🎨DRAWING MODE🎨 move cursor to draw ~~ click to lift your paint brush 🐋';
+  } else {
+    document.querySelector('.mode').textContent =
+      'DRAWING MODE OFF ~~ click to draw';
+  }
 });
 
 const changeColor = function (choice) {
