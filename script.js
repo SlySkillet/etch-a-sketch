@@ -1,5 +1,5 @@
 let color = 'black';
-let click = true;
+let click = false;
 
 document.querySelector('.container').addEventListener('click', () => {
   click = !click;
@@ -8,7 +8,7 @@ document.querySelector('.container').addEventListener('click', () => {
       '🎨DRAWING MODE🎨 move cursor to draw ~~ click to lift your paint brush 🐋';
   } else {
     document.querySelector('.mode').textContent =
-      'DRAWING MODE OFF ~~ click to draw';
+      'DRAWING MODE OFF 👾👾👾 click in drawing box to color 👾👾👾';
   }
 });
 
