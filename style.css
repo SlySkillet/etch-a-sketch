@@ -12,6 +12,18 @@ body {
   justify-content: space-between;
 }
 
+.top-buttons {
+  position: absolute;
+  top: 160px;
+  left: 500px;
+}
+
+.bottom-buttons {
+  position: absolute;
+  bottom: 30px;
+  left: 530px;
+}
+
 button {
   margin-left: 20px;
   margin-right: 20px;
@@ -19,8 +31,8 @@ button {
 
 .container {
   border-style: solid;
-  border-color: rgb(246, 68, 68);
-  border-width: 80px 100px 80px;
+  border-color: #ff5e5b;
+  border-width: 80px 150px 80px;
   border-radius: 8px;
   width: 500px;
   height: 500px;
