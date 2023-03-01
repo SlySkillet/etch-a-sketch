@@ -50,3 +50,17 @@ button {
 .--black-cell {
   background-color: black;
 }
+
+button {
+  background-color: yellow;
+  border-color: rgb(58, 58, 58);
+  border-radius: 5px;
+  border-style: double;
+  border-width: 5px;
+}
+
+button:hover {
+  background-color: rgb(50, 62, 127);
+  color: aliceblue;
+  border-color: aliceblue;
+}
