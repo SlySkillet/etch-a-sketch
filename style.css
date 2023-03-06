@@ -12,18 +12,6 @@ body {
   justify-content: space-between;
 }
 
-.top-buttons {
-  position: absolute;
-  top: 160px;
-  left: 500px;
-}
-
-.bottom-buttons {
-  position: absolute;
-  bottom: 30px;
-  left: 530px;
-}
-
 button {
   margin-left: 20px;
   margin-right: 20px;
