@@ -21,8 +21,7 @@ const colorCell = function () {
     if (color === 'rainbow') {
       this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
     } else if (color === 'grey') {
-      color = `rgba(0,0,0, 0.2)`;
-      this.style.backgroundColor = color;
+      this.style.backgroundColor = `rgba(0,0,0, 0.2)`;
     } else {
       this.style.backgroundColor = color;
     }
