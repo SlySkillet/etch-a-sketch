@@ -12,6 +12,18 @@ body {
   justify-content: space-between;
 }
 
+.mode {
+  border-style: solid;
+  border-color: rgb(158, 152, 152);
+  background-color: rgb(38, 30, 30);
+  padding: 20px;
+
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  color: greenyellow;
+}
+
 button {
   margin-left: 20px;
   margin-right: 20px;
