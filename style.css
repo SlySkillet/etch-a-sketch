@@ -1,9 +1,17 @@
+/* * {
+  box-sizing: border-box;
+} */
+
 body {
   display: flex;
   flex-direction: column;
   background-color: antiquewhite;
   /* background-color: #78cccb; */
   align-items: center;
+}
+
+.flex-container {
+  position: relative;
 }
 
 .top-buttons,
@@ -13,13 +21,21 @@ body {
 }
 
 .mode {
+  /* position: relative; */
+  position: absolute;
+  top: 65px;
+  left: 290px;
+  height: 70px;
+  width: 400px;
+
   border-style: solid;
   border-color: rgb(158, 152, 152);
   background-color: rgb(38, 30, 30);
-  padding: 20px;
+  padding: 10px;
 
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
   font-weight: 900;
   color: greenyellow;
 }
@@ -32,10 +48,10 @@ button {
 .container {
   border-style: solid;
   border-color: #ff5e5b;
-  border-width: 80px 150px 80px;
+  border-width: 130px 200px 130px;
   border-radius: 8px;
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   background-color: lavenderblush;
   margin: 20px;
   display: grid;
