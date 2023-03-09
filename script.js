@@ -6,11 +6,11 @@ let click = false;
 document.querySelector('.container').addEventListener('click', () => {
   click = !click;
   if (click) {
-    document.querySelector('.mode').textContent =
-      '🎨DRAWING MODE🎨 move cursor to draw ~~ click to lift your paint brush 🐋';
+    document.querySelector('.mode').innerHTML =
+      '🎨DRAWING MODE🎨 <br/> 🐋move cursor to draw🐋 <br/>click to lift your paint brush ';
   } else {
-    document.querySelector('.mode').textContent =
-      'DRAWING MODE OFF 👻 click in drawing box to color 👻';
+    document.querySelector('.mode').innerHTML =
+      'DRAWING MODE OFF <br/> 👻 click in drawing box to color 👻';
   }
 });
 
