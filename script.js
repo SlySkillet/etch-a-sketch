@@ -1,3 +1,5 @@
+'use strict';
+
 let color = 'black';
 let click = false;
 
@@ -47,7 +49,7 @@ const changeSize = function (input) {
   if (input >= 16 && input <= 100) {
     makeGrid(input);
   } else {
-    console.log('broh num between 16 and 100 broh 🐳');
+    alert('broh num between 16 and 100 broh 🐳');
   }
 };
 
