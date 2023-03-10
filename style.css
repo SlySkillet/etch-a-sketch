@@ -10,8 +10,12 @@ body {
   align-items: center;
 }
 
-.flex-container {
+/* .flex-container {
   position: relative;
+} */
+
+h1 {
+  height: 10px;
 }
 
 .top-buttons,
@@ -20,11 +24,24 @@ body {
   justify-content: space-between;
 }
 
+.top-buttons {
+  position: relative;
+  display: flex;
+  top: 45px;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.bottom-buttons {
+  position: relative;
+  bottom: 45px;
+}
+
 .mode {
-  /* position: relative; */
-  position: absolute;
-  top: 65px;
-  left: 290px;
+  position: relative;
+  /* position: absolute; */
+  /* top: 160px; */
+  top: 10px;
   height: 70px;
   width: 400px;
 
@@ -46,14 +63,18 @@ button {
 }
 
 .container {
+  /* position: ; */
+  /* z-index: -1; */
+  /* top: ; */
   border-style: solid;
   border-color: #ff5e5b;
-  border-width: 130px 200px 130px;
+  /* border-width: 160px 200px 130px; */
+  border-width: 60px 200px 60px;
   border-radius: 8px;
-  width: 550px;
-  height: 550px;
+  width: 450px;
+  height: 450px;
   background-color: lavenderblush;
-  margin: 20px;
+  margin: 0px;
   display: grid;
 }
 
