@@ -11,31 +11,32 @@
   <body>
     <h1>Etch-A-Sketch</h1>
 
-    <div class="flex-container">
-      <div class="top-buttons">
-        <button onclick="changeColor('black')">BLACK</button>
-        <button onclick="changeColor('rainbow')">RAINBOW</button>
-        <button onclick="changeColor('grey')">GREY</button>
-        <button onclick="changeColor('whitesmoke')">ERASER</button>
-      </div>
-      <div class="mode">
-        DRAWING MODE OFF <br />
-        👻 click in drawing box to color 👻
-      </div>
-      <div class="container"></div>
-      <div class="bottom-buttons">
-        <button onclick="resetBoard()">CLEAR</button>
-        <div>
-          <input
-            type="text"
-            placeholder="size of grid"
-            value="16"
-            onchange="changeSize(this.value)"
-          />
-          <button>Change Size</button>
-        </div>
+    <!-- <div class="flex-container"> -->
+    <div class="mode">
+      DRAWING MODE OFF <br />
+      click in drawing box to color
+    </div>
+    <div class="top-buttons">
+      <button onclick="changeColor('black')">BLACK</button>
+      <button onclick="changeColor('rainbow')">RAINBOW</button>
+      <button onclick="changeColor('grey')">GREY</button>
+      <button onclick="changeColor('whitesmoke')">ERASER</button>
+    </div>
+
+    <div class="container"></div>
+    <div class="bottom-buttons">
+      <button onclick="resetBoard()">CLEAR</button>
+      <div>
+        <input
+          type="text"
+          placeholder="size of grid"
+          value="16"
+          onchange="changeSize(this.value)"
+        />
+        <button>Change Size</button>
       </div>
     </div>
+    <!-- </div> -->
     <script src="script.js"></script>
   </body>
 </html>

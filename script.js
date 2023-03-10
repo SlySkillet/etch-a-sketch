@@ -7,10 +7,10 @@ document.querySelector('.container').addEventListener('click', () => {
   click = !click;
   if (click) {
     document.querySelector('.mode').innerHTML =
-      '🎨DRAWING MODE🎨 <br/> 🐋move cursor to draw🐋 <br/>click to lift your paint brush ';
+      '🎨  DRAWING MODE  🎨 <br/> move cursor to draw <br/>click to lift your paint brush ';
   } else {
     document.querySelector('.mode').innerHTML =
-      'DRAWING MODE OFF <br/> 👻 click in drawing box to color 👻';
+      'DRAWING MODE OFF <br/> click in drawing box to color';
   }
 });
 
