@@ -1,25 +1,17 @@
-/* * {
-  box-sizing: border-box;
-} */
-
 body {
   display: flex;
   flex-direction: column;
   background-color: antiquewhite;
-  /* background-color: #78cccb; */
   align-items: center;
   margin: 0;
 }
 
-/* .flex-container {
-  position: relative;
-} */
-
 h1 {
   font-family: 'Lobster', cursive;
-  font-size: 50px;
+  font-size: 60px;
   padding: 0;
   margin: 0;
+  margin-top: 10px;
 }
 
 .top-buttons,
@@ -42,19 +34,16 @@ h1 {
 }
 
 .mode {
-  position: relative;
-  /* position: absolute; */
-  /* top: 160px; */
-  top: 20px;
+  /* position: relative;
+  top: 0px; */
   height: 70px;
   width: 400px;
 
   border-style: solid;
-  /* border-color: #ff5e5b; */
-  /* border-width: 40px; */
   border-color: rgb(158, 152, 152);
   background-color: rgb(38, 30, 30);
   padding: 10px;
+  margin: 0;
 
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
@@ -69,11 +58,6 @@ button {
 }
 
 .container {
-  /* position: ; */
-  /* z-index: -1; */
-  /* top: ; */
-  /* position: relative;
-  top: 60px; */
   border-style: solid;
   border-color: #ff5e5b;
   /* border-width: 160px 200px 130px; */
@@ -85,12 +69,6 @@ button {
   margin: 0px;
   display: grid;
 }
-
-/* .grid-item {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(243, 92, 200);
-} */
 
 .--black-cell {
   background-color: black;
